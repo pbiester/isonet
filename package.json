@@ -1,7 +1,7 @@
 {
   "name": "isonet",
-  "version": "0.0.1",
-  "description": "Paul Biester's simple personal webpage, isonet.fr",
+  "version": "0.0.3",
+  "description": "A simple and fast personal webpage.",
   "main": "index.html",
   "scripts": {
     "build": "gulp",
