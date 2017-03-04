@@ -1,0 +1,43 @@
+{
+  "name": "isonet",
+  "version": "0.0.1",
+  "description": "Paul Biester's simple personal webpage, isonet.fr",
+  "main": "index.html",
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server --host=0.0.0.0 --port=8080 --no-browser --mount=/:src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isonet/isonet.git"
+  },
+  "keywords": [
+    "Paul",
+    "Biester",
+    "isonet",
+    "github",
+    "npm",
+    "biester",
+    "yannic",
+    "paul",
+    "it",
+    "informatik",
+    "computer",
+    "science",
+    "programming",
+    "development"
+  ],
+  "author": "Paul Biester",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isonet/isonet/issues"
+  },
+  "homepage": "https://isonet.fr",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-inline-source": "^3.0.0",
+    "live-server": "^1.2.0"
+  }
+}
