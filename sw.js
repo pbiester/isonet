@@ -1,6 +1,6 @@
 self.addEventListener('install', function (event) {
     event.waitUntil(caches.open('isonet').then(function (cache) {
-        return cache.addAll(['./', 'assets/favicon.png', 'manifest.json', 'https://cdn.ampproject.org/v0.js']);
+        return cache.addAll(['./', 'assets/icons/icon-192x192.png', 'assets/favicon.png', 'manifest.json', 'https://cdn.ampproject.org/v0.js']);
     }));
 });
 self.addEventListener('fetch', function (event) {
