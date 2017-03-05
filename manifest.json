@@ -3,7 +3,7 @@
   "short_name": "Paul Biester",
   "theme_color": "#444444",
   "background_color": "#ffffff",
-  "display": "minimal-ui",
+  "display": "standalone",
   "Scope": "/",
   "start_url": "/",
   "icons": [
