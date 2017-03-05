@@ -1,6 +1,6 @@
 {
   "name": "isonet",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple and fast personal webpage.",
   "main": "index.html",
   "scripts": {
