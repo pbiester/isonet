@@ -13,6 +13,10 @@ main {
     display: block;
 }
 
+section {
+    page-break-inside: avoid;
+}
+
 h1, h2, h3 {
     line-height: 1.2;
 }
