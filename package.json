@@ -1,6 +1,6 @@
 {
   "name": "isonet",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "A simple and fast personal webpage.",
   "main": "index.html",
   "scripts": {
@@ -35,6 +35,7 @@
   },
   "homepage": "https://isonet.fr",
   "devDependencies": {
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-htmlmin": "^3.0.0",
     "gulp-inline-source": "^3.0.0",
