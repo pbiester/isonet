@@ -13,6 +13,6 @@ gulp.task('default', function() {
         .pipe(gulp.dest('./build/'));
     gulp.src(['./src/manifest.json', './src/robots.txt', './src/sitemap.xml', './src/sw.js'])
         .pipe(gulp.dest('./build/'));
-    gulp.src(['./assets/**'])
+    gulp.src(['./src/assets/**'])
         .pipe(gulp.dest('./build/assets/'));
 });
