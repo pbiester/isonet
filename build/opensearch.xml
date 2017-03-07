@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>Paul Biester | Search</ShortName>
+    <Description>Search Paul Biester's homepage, isonet.fr.</Description>
+    <Tags>paul biester isonet</Tags>
+    <Contact>contact@isonet.fr</Contact>
+    <Url type="text/html" method="get" template="https://isonet.fr/#q={searchTerms}"/>
+    <Image height="194" width="194" type="image/png">https://isonet.fr/assets/favicon.png</Image>
+    <Developer>Paul Biester</Developer>
+    <AdultContent>false</AdultContent>
+    <Language>en-us</Language>
+    <OutputEncoding>UTF-8</OutputEncoding>
+    <InputEncoding>UTF-8</InputEncoding>
+</OpenSearchDescription>

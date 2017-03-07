@@ -11,7 +11,7 @@ gulp.task('default', function() {
         }))
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('./build/'));
-    gulp.src(['./src/manifest.json', './src/robots.txt', './src/sitemap.xml', './src/sw.js'])
+    gulp.src(['./src/opensearch.xml', './src/manifest.json', './src/robots.txt', './src/sitemap.xml', './src/sw.js'])
         .pipe(gulp.dest('./build/'));
     gulp.src(['./src/assets/**'])
         .pipe(gulp.dest('./build/assets/'));
