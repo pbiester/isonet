@@ -13,6 +13,10 @@ main {
     display: block;
 }
 
+.highlight {
+    background-color: yellow;
+}
+
 section {
     page-break-inside: avoid;
 }
