@@ -28,6 +28,25 @@ a {
     text-decoration: underline;
 }
 
+h2 > a {
+    text-decoration: none;
+}
+
+h2 > a:focus {
+    color: #444;
+    text-decoration: underline;
+}
+
+h2 > a:visited {
+    color: #444;
+    text-decoration: underline;
+}
+
+h2 > a:active {
+    color: #444;
+    text-decoration: underline;
+}
+
 a:hover {
     color: #777;
     text-decoration: underline;
@@ -48,29 +67,32 @@ a:active {
     text-decoration: underline;
 }
 
-ul#skills {
+section#skills > ul {
     columns: 316px;
     padding: 0;
 }
 
-ul#skills > li {
+section#skills > ul > li {
     break-inside: avoid;
     -webkit-column-break-inside: avoid;
     padding-bottom: 10px;
     margin-left: 40px;
 }
 
-ul#skills > li > ul {
+section#skills > ul > li > ul {
     margin-top: 0;
 }
 
-ul#skills > li > h3 {
+section#skills > ul > li > h3 {
     margin: 0;
 }
 
 hr {
     clear: both;
 }
+
+
+
 
 @media print {
     a {
