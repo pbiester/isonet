@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://isonet.fr/sitemap.xml
+Sitemap: https://isonet.fr/assets/sitemap.xml
+Sitemap: https://paul.biester.pro/assets/sitemap-paul-biester-pro.xml
+Sitemap: https://biester.pro/assets/sitemap-biester-pro.xml
