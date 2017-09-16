@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/isonet/isonet/issues"
   },
-  "homepage": "https://isonet.fr",
+  "homepage": "https://paul.biester.pro",
   "devDependencies": {
     "del": "^2.2.2",
     "gulp": "^3.9.1",
