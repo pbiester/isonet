@@ -1,13 +1,25 @@
-// <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js')}</script>
-self.addEventListener('install', function (event) {
-    event.waitUntil(caches.open('isonet').then(function (cache) {
-        return cache.addAll(['./', 'assets/favicon.png', 'manifest.json', 'https://cdn.ampproject.org/v0.js']);
-    }));
+self.addEventListener('install', () => {
+    self.skipWaiting();
+    clients.claim().catch(() => null);
 });
-self.addEventListener('fetch', function (event) {
-    event.respondWith(fetch(event.request).then(function(response) {
-        return response;
-    }).catch(function() {
-        return caches.match(event.request);
-    }));
+self.addEventListener('fetch', (event) => {
+    event.respondWith(
+        // Try the cache
+        caches.match(event.request).then((cacheResponse) => {
+            // Fall back to network
+            const networkTry = fetch(event.request);
+            return networkTry.then((networkResponse) => {
+                return caches.open('default').then((cache) => {
+                    cache.put(event.request, networkResponse.clone());
+                    return networkResponse
+                });
+            }).catch(() => {
+                if (cacheResponse) {
+                    return cacheResponse;
+                } else {
+                    return new Response(null, {status: 404});
+                }
+            })
+        })
+    );
 });
