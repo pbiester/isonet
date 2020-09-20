@@ -21,6 +21,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+
+      - name: Clean previous build
+        run: rm -Rf dist
       
       - name: Install dependencies
         run: npm ci
