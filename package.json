@@ -7,7 +7,7 @@
     "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "live-server --host=0.0.0.0 --port=8080 --no-browser --mount=/:src",
-    "push": "git subtree push --force --prefix build origin gh-pages"
+    "push": "git push origin `git subtree split --prefix dist master`:gh-pages --force"
   },
   "repository": {
     "type": "git",
