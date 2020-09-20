@@ -1,13 +1,12 @@
 {
   "name": "isonet",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "A simple and fast personal webpage.",
   "main": "index.html",
   "scripts": {
-    "build": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server --host=0.0.0.0 --port=8080 --no-browser --mount=/:src",
-    "push": "git push origin `git subtree split --prefix build master`:gh-pages --force"
+    "build": "parcel build --public-url / src/index.html",
+    "start": "parcel src/index.html",
+    "push": "git push origin `git subtree split --prefix dist master`:gh-pages --force"
   },
   "repository": {
     "type": "git",
@@ -36,10 +35,7 @@
   },
   "homepage": "https://isonet.fr",
   "devDependencies": {
-    "del": "^5.1.0",
-    "gulp": "^4.0.2",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-inline-source": "^4.0.0",
-    "live-server": "^1.2.0"
+    "parcel-bundler": "1.12.4",
+    "parcel-plugin-inliner": "1.0.14"
   }
 }
