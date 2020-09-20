@@ -28,5 +28,8 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Add CNAME
+        run: echo "isonet.fr" > dist/CNAME
+
       - name: Publish
         run: npm run push
