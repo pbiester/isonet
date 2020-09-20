@@ -31,14 +31,8 @@ jobs:
       - name: Add CNAME
         run: echo "isonet.fr" > dist/CNAME
 
-      - name: Add CNAME
-        run: ls
-
-      - name: Add CNAME
-        run: ls dist
-
-      - name: Add CNAME
-        run: less dist/CNAME
+      - name: Git commit CNAME
+        run: git add dist/CNAME && git commit -m "Add CNAME"
 
       - name: Publish
         run: npm run push
