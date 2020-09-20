@@ -32,7 +32,11 @@ jobs:
         run: echo "isonet.fr" > dist/CNAME
 
       - name: Git commit CNAME
-        run: git add dist/CNAME && git commit -m "Add CNAME"
+        run: |
+          git config --global user.name github
+          git config --global user.email github@example.com
+          git add dist/CNAME
+          git commit -m "Add CNAME"
 
       - name: Publish
         run: npm run push
