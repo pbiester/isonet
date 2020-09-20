@@ -31,5 +31,14 @@ jobs:
       - name: Add CNAME
         run: echo "isonet.fr" > dist/CNAME
 
+      - name: Add CNAME
+        run: ls
+
+      - name: Add CNAME
+        run: ls dist
+
+      - name: Add CNAME
+        run: less dist/CNAME
+
       - name: Publish
         run: npm run push
