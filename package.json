@@ -1,7 +1,7 @@
 {
   "name": "isonet",
   "version": "1.0.0",
-  "description": "A simple and fast personal webpage.",
+  "description": "My simple personal website",
   "main": "index.html",
   "scripts": {
     "build": "parcel build src/index.html --public-url / --no-source-maps --experimental-scope-hoisting",
